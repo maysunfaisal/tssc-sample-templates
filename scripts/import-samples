@@ -38,8 +38,8 @@ cp -r $DEST/content/README.md  $DEST/content/docs/source-component.md
 cp -r $ROOT_DIR/skeleton/source-repo/.tekton/README.md  $DEST/content/docs/pipelines.md
 
  
-sed -i "s!sed.edit.NAME!$APP_NAME!g" $DEST/template.yaml
-sed -i "s!sed.edit.TITLE!$APP_DISPLAY_NAME!g" $DEST/template.yaml
+sed -i "s!sed.edit.NAME!private-$APP_NAME!g" $DEST/template.yaml
+sed -i "s!sed.edit.TITLE!Private $APP_DISPLAY_NAME!g" $DEST/template.yaml
 sed -i "s!sed.edit.DESCRIPTION!Private Repo - $APP_DESC!g" $DEST/template.yaml
 sed -i "s!sed.edit.APPTAGS!$APP_TAGS!g" $DEST/template.yaml
 sed -i "s!sed.edit.CATALOG_DESCRIPTION!Secure Supply Chain Example for $APP_DESC!g" $DEST/template.yaml

@@ -1,13 +1,13 @@
 # PE can replace these values with on-prem host
 export GITHUB__DEFAULT__HOST=github.com
-export GITLAB__DEFAULT__HOST=gitlab.com
-export QUAY__DEFAULT__HOST=quay.io
+export GITLAB__DEFAULT__HOST=gitlab-gitlab.apps.cluster-px2p8.sandbox1663.opentlc.com
+export QUAY__DEFAULT__HOST=quay-px2p8.apps.cluster-px2p8.sandbox1663.opentlc.com
 
-export DEFAULT__DEPLOYMENT__NAMESPACE__PREFIX=rhtap-app
+export DEFAULT__DEPLOYMENT__NAMESPACE__PREFIX=janus-argocd
 
-export ARGOCD__DEFAULT__NAMESPACE=rhtap
-export ARGOCD__DEFAULT__INSTANCE=default
-export ARGOCD__DEFAULT__PROJECT=default
+export ARGOCD__DEFAULT__NAMESPACE=janus-argocd
+export ARGOCD__DEFAULT__INSTANCE=main
+export ARGOCD__DEFAULT__PROJECT=janus
 
 
 # For secret reference in Repositroy CRs
